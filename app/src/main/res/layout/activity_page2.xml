@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Page2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/p2_imgbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button"
+            android:onClick="onClick1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/btn_4"
+            tools:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/p2_imgbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button"
+            android:onClick="onClick2"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/btn_5"
+            tools:scaleType="fitXY" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/activity_page2_adview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+        <ImageButton
+            android:id="@+id/p2_imgbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button"
+            android:onClick="onClick3"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/btn_6"
+            tools:scaleType="fitXY" />
+    </LinearLayout>
+</RelativeLayout>
